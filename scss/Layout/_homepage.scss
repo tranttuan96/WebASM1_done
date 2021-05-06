@@ -445,3 +445,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 390px) {
+  .categories__intro {
+    .detail__banner {
+      .top {
+        padding-bottom: 20%;
+        border-bottom: 1px solid #d59b47;
+      }
+      .center {
+        .center__top, .center__bottom {
+          display: none;
+        }
+      }
+    }
+  }
+}

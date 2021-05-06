@@ -686,12 +686,6 @@ body {
 @media only screen and (max-width: 480px) {
   .categories__intro .detail__banner .top a, .categories__intro .detail__banner .bottom a {
     font-size: 10px; } }
-@media only screen and (max-width: 390px) {
-  .categories__intro .detail__banner .top {
-    padding-bottom: 20%;
-    border-bottom: 1px solid #d59b47; }
-  .categories__intro .detail__banner .center .center__top, .categories__intro .detail__banner .center .center__bottom {
-    display: none; } }
 .contact__map {
   width: 100%; }
   .contact__map .map {
@@ -738,4 +732,4 @@ body {
   .contact__map {
     padding-top: 80px; } }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=main.css.map */
