@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebASM1</title>
+
+    <!-- import bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+    />
+
+    <!-- font google  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- owl.carousel css  -->
+    <link rel="stylesheet" href="./CSS/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./CSS/owl.theme.default.css" />
+
+    <!-- main css  -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- products css -->
+    <link rel="stylesheet" href="./css/products.css" />
+  </head>
+
+  <body>
+    <div class="reponsive__menu">
+      <div class="logo">
+        <a href="https://tinhlamjw.com"
+          ><img src="./img/logo-2.png" alt=""
+        /></a>
+      </div>
+      <div class="language__option">
+        <div class="top__hover">
+          <span>Tiếng Việt <i class="fa fa-angle-down"></i></span>
+          <ul>
+            <li>Tiếng Việt</li>
+            <li>English</li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav__option">
+        <a href="#" class="search-switch"
+          ><img src="./img/search.png" alt=""
+        /></a>
+        <a href="#" class="cart"
+          ><img src="./img/cart.png" alt="" />
+          <span class="cart__count">0</span>
+        </a>
+      </div>
+      <div class="mobile__menu">
+        <ul>
+          <li>
+            <a href="index.html" >TRANG CHỦ</a>
+          </li>
+          <li>
+            <a href="intro.html" >GIỚI THIỆU</a>
+          </li>
+          <li>
+            <a href="products.html">SẢN PHẨM</a>
+          </li>
+          <li>
+            <a href="blog.html">BLOG</a>
+          </li>
+          <li>
+            <a href="contact.html" >LIÊN HỆ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <a target="_blank" class="facebook" href="#"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a target="_blank" class="youtube" href="#"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a target="_blank" class="instagram" href="#"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <div class="header__logo">
+                <a href="./index.html"><img src="./img/logo.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="header__top__nav">
+                <div class="nav__option">
+                  <a href="#" class="search"
+                    ><img src="./img/search.png" alt=""
+                  /></a>
+                  <a href="#" class="cart"
+                    ><img src="./img/cart.png" alt="" />
+                    <span class="cart__count">0</span>
+                  </a>
+                </div>
+                <div class="language__option">
+                  <span>Tiếng Việt <i class="fa fa-angle-down"></i></span>
+                  <ul>
+                    <li>Tiếng Việt</li>
+                    <li>English</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-12">
+              <div class="header__logo__responsive">
+                <a href="index.html"><img src="./img/logo.png" alt="" /></a>
+              </div>
+              <div class="header__bottom__left slogan">
+                <p>Cam kết sản phẩm hoàn toàn là đá tự nhiên</p>
+              </div>
+            </div>
+            <div class="col-7 d-md-block d-none">
+              <nav class="header__menu">
+                <ul>
+                  <li>
+                    <a href="index.html">TRANG CHỦ</a>
+                  </li>
+                  <li>
+                    <a href="intro.html">GIỚI THIỆU</a>
+                  </li>
+                  <li  class="active">
+                    <a href="products.html">SẢN PHẨM</a>
+                  </li>
+                  <li>
+                    <a href="blog.html">BLOG</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">LIÊN HỆ</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="active__menu__button"><i class="fa fa-bars"></i></div>
+        </div>
+      </div>
+    </div>
+
+		<section class="my-5 py-5">
+			<div class="container my-5">
+				<div id="r2" class="row">
+					<div id="r2c1" class="col-lg-3">
+						<div id="r2c1r1" class="row pb-4 border-bottom">
+							<div class="pb-4">
+								<span class="fw-bold">LOẠI SẢN PHẨM</span>
+								<button id="buttonLoaiSanPham" onclick="toggleLoaiSanPham();">&#x2014;</button>
+							</div>
+
+							<div id="loaiSanPham">
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="radio"
+										name="loaiSanPham"
+										id="phongThuy"
+									/>
+									<label class="form-check-label" for="phongThuy">
+										Phong thuỷ
+									</label>
+								</div>
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="radio"
+										name="loaiSanPham"
+										id="thoiTrang"
+									/>
+									<label class="form-check-label" for="thoiTrang">
+										Thời trang
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div id="r2c1r2" class="row py-4 border-bottom">
+							<div class="pb-4">
+								<span class="fw-bold">DÒNG SẢN PHẨM</span>
+								<button id="buttonDongSanPham" onclick="toggleDongSanPham();">&#x2014;</button>
+							</div>
+
+							<div id="dongSanPham">
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="radio"
+										name="dongSanPham"
+										id="caoCap"
+									/>
+									<label class="form-check-label" for="caoCap"> Cao cấp </label>
+								</div>
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="radio"
+										name="dongSanPham"
+										id="trungCap"
+									/>
+									<label class="form-check-label" for="trungCap">
+										Trung cấp
+									</label>
+								</div>
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="radio"
+										name="dongSanPham"
+										id="phoThong"
+									/>
+									<label class="form-check-label" for="phoThong">
+										Phổ thông
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div id="r2c1r3" class="row py-4 border-bottom">
+							<div class="pb-4">
+								<span class="fw-bold">BỘ SƯU TẬP</span>
+								<button id="buttonBoSuuTap" onclick="toggleBoSuuTap();">&#x2014;</button>
+							</div>
+
+							<div id="boSuuTap">
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="radio"
+										name="boSuuTap"
+										id="tamThangBa"
+									/>
+									<label class="form-check-label" for="tamThangBa">
+										"Tấm" Tháng Ba
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div id="r2c1r4" class="row py-4 border-bottom">
+							<div class="pb-4">
+								<span class="fw-bold">GIÁ SẢN PHẨM</span>
+								<button id="buttonGiaSanPham" onclick="toggleGiaSanPham();">&#x2014;</button>
+							</div>
+
+							<div id="giaSanPham">
+								<label for="leftSlider" class="form-label">Giá tối thiểu: </label>
+								<span id="leftSliderVal">0 ₫</span>
+								<input
+									type="range"
+									class="form-range"
+									min="0"
+									max="6000000"
+									value="0"
+									step="100000"
+									id="leftSlider"
+									onchange="leftSliderChange();"
+								/>
+								<label for="rightSlider" class="form-label">Giá tối đa: </label>
+								<span id="rightSliderVal">6.000.000 ₫</span>
+								<input
+									type="range"
+									class="form-range"
+									min="0"
+									max="6000000"
+									value="6000000"
+									step="100000"
+									id="rightSlider"
+									onchange="rightSliderChange();"
+								/>
+							</div>
+						</div>
+
+						<div id="r2c1r5" class="row pt-4 pb-5">
+							<div class="pb-4">
+								<span class="fw-bold">BẢN MỆNH PHÙ HỢP</span>
+							</div>
+
+							<select class="form-select" aria-label="Default select example">
+								<option value="">-- Chọn năm sinh --</option>
+								<option value="1924">1924</option>
+								<option value="1925">1925</option>
+								<option value="1926">1926</option>
+								<option value="1927">1927</option>
+								<option value="1928">1928</option>
+								<option value="1929">1929</option>
+								<option value="1930">1930</option>
+								<option value="1931">1931</option>
+								<option value="1932">1932</option>
+								<option value="1933">1933</option>
+								<option value="1934">1934</option>
+								<option value="1935">1935</option>
+								<option value="1936">1936</option>
+								<option value="1937">1937</option>
+								<option value="1938">1938</option>
+								<option value="1939">1939</option>
+								<option value="1940">1940</option>
+								<option value="1941">1941</option>
+								<option value="1942">1942</option>
+								<option value="1943">1943</option>
+								<option value="1944">1944</option>
+								<option value="1945">1945</option>
+								<option value="1946">1946</option>
+								<option value="1947">1947</option>
+								<option value="1948">1948</option>
+								<option value="1949">1949</option>
+								<option value="1950">1950</option>
+								<option value="1951">1951</option>
+								<option value="1952">1952</option>
+								<option value="1953">1953</option>
+								<option value="1954">1954</option>
+								<option value="1955">1955</option>
+								<option value="1956">1956</option>
+								<option value="1957">1957</option>
+								<option value="1958">1958</option>
+								<option value="1959">1959</option>
+								<option value="1960">1960</option>
+								<option value="1961">1961</option>
+								<option value="1962">1962</option>
+								<option value="1963">1963</option>
+								<option value="1964">1964</option>
+								<option value="1965">1965</option>
+								<option value="1966">1966</option>
+								<option value="1967">1967</option>
+								<option value="1968">1968</option>
+								<option value="1969">1969</option>
+								<option value="1970">1970</option>
+								<option value="1971">1971</option>
+								<option value="1972">1972</option>
+								<option value="1973">1973</option>
+								<option value="1974">1974</option>
+								<option value="1975">1975</option>
+								<option value="1976">1976</option>
+								<option value="1977">1977</option>
+								<option value="1978">1978</option>
+								<option value="1979">1979</option>
+								<option value="1980">1980</option>
+								<option value="1981">1981</option>
+								<option value="1982">1982</option>
+								<option value="1983">1983</option>
+								<option value="1984">1984</option>
+								<option value="1985">1985</option>
+								<option value="1986">1986</option>
+								<option value="1987">1987</option>
+								<option value="1988">1988</option>
+								<option value="1989">1989</option>
+								<option value="1990">1990</option>
+								<option value="1991">1991</option>
+								<option value="1992">1992</option>
+								<option value="1993">1993</option>
+								<option value="1994">1994</option>
+								<option value="1995">1995</option>
+								<option value="1996">1996</option>
+								<option value="1997">1997</option>
+								<option value="1998">1998</option>
+								<option value="1999">1999</option>
+								<option value="2000">2000</option>
+								<option value="2001">2001</option>
+								<option value="2002">2002</option>
+								<option value="2003">2003</option>
+								<option value="2004">2004</option>
+								<option value="2005">2005</option>
+								<option value="2006">2006</option>
+								<option value="2007">2007</option>
+								<option value="2008">2008</option>
+								<option value="2009">2009</option>
+								<option value="2010">2010</option>
+								<option value="2011">2011</option>
+								<option value="2012">2012</option>
+								<option value="2013">2013</option>
+								<option value="2014">2014</option>
+								<option value="2015">2015</option>
+								<option value="2016">2016</option>
+								<option value="2017">2017</option>
+								<option value="2018">2018</option>
+								<option value="2019">2019</option>
+								<option value="2020">2020</option>
+								<option value="2021">2021</option>
+							</select>
+						</div>
+					</div>
+
+					<div id="r2c2" class="col-lg-9 px-4">
+						<div id="r2c2r1" class="row pb-5">
+							<div class="col-md-6">
+								<p>Hiển thị 1–9 trong 25 kết quả</p>
+							</div>
+							<div class="col-md-6 d-flex justify-content-end">
+								<select class="form-select w-75" aria-label="Default select example">
+									<option value="">Sắp xếp theo sự phổ biến</option>
+									<option value="" selected>Sắp xếp theo mới nhẩt</option>
+									<option value="">Sắp xếp theo giá: Thấp đến cao</option>
+									<option value="">Sắp xếp theo giá: Cao đến thấp</option>
+								</select>
+							</div>
+						</div>
+
+						<div id="r2c2r2" class="row">
+							<div class="col-lg-4 col-md-6 col-sm-6 col-6 px-3 pt-2 pb-4">
+								<div class="card">
+									<a href="product1.html">
+										<img src="./img/products/-6034image19.jpeg" alt="item" />
+									</a>
+									<div class="tag">New</div>
+									<div class="detail_icon">
+										<a href="#">
+											<img
+												src="https://tinhlamjw.com/wp-content/themes/tinhlamjwt/img/icon/search.png"
+												alt=""
+											/>
+										</a>
+									</div>
+									<div class="detail__text">
+										<a href="product1.html">Xem chi tiết</a>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Vòng ưu linh ngũ sắc</h5>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-6 col-6 px-3 pt-2 pb-4">
+								<div class="card">
+									<a href="product1.html">
+										<img src="./img/products/-6034image19.jpeg" alt="item" />
+									</a>
+									<div class="tag">New</div>
+									<div class="detail_icon">
+										<a href="#">
+											<img
+												src="https://tinhlamjw.com/wp-content/themes/tinhlamjwt/img/icon/search.png"
+												alt=""
+											/>
+										</a>
+									</div>
+									<div class="detail__text">
+										<a href="product1.html">Xem chi tiết</a>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Vòng ưu linh ngũ sắc</h5>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-6 col-6 px-3 pt-2 pb-4">
+								<div class="card">
+									<a href="product1.html">
+										<img src="./img/products/-6034image19.jpeg" alt="item" />
+									</a>
+									<div class="tag">New</div>
+									<div class="detail_icon">
+										<a href="#">
+											<img
+												src="https://tinhlamjw.com/wp-content/themes/tinhlamjwt/img/icon/search.png"
+												alt=""
+											/>
+										</a>
+									</div>
+									<div class="detail__text">
+										<a href="product1.html">Xem chi tiết</a>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Vòng ưu linh ngũ sắc</h5>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-6 col-6 px-3 pt-2 pb-4">
+								<div class="card">
+									<a href="product1.html">
+										<img src="./img/products/-6034image19.jpeg" alt="item" />
+									</a>
+									<div class="tag">New</div>
+									<div class="detail_icon">
+										<a href="#">
+											<img
+												src="https://tinhlamjw.com/wp-content/themes/tinhlamjwt/img/icon/search.png"
+												alt=""
+											/>
+										</a>
+									</div>
+									<div class="detail__text">
+										<a href="product1.html">Xem chi tiết</a>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Vòng ưu linh ngũ sắc</h5>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-6 col-6 px-3 pt-2 pb-4">
+								<div class="card">
+									<a href="product1.html">
+										<img src="./img/products/-6034image19.jpeg" alt="item" />
+									</a>
+									<div class="tag">New</div>
+									<div class="detail_icon">
+										<a href="#">
+											<img
+												src="https://tinhlamjw.com/wp-content/themes/tinhlamjwt/img/icon/search.png"
+												alt=""
+											/>
+										</a>
+									</div>
+									<div class="detail__text">
+										<a href="product1.html">Xem chi tiết</a>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Vòng ưu linh ngũ sắc</h5>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-6 col-6 px-3 pt-2 pb-4">
+								<div class="card">
+									<a href="product1.html">
+										<img src="./img/products/-6034image19.jpeg" alt="item" />
+									</a>
+									<div class="tag">New</div>
+									<div class="detail_icon">
+										<a href="#">
+											<img
+												src="https://tinhlamjw.com/wp-content/themes/tinhlamjwt/img/icon/search.png"
+												alt=""
+											/>
+										</a>
+									</div>
+									<div class="detail__text">
+										<a href="product1.html">Xem chi tiết</a>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Vòng ưu linh ngũ sắc</h5>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-6 col-6 px-3 pt-2 pb-4">
+								<div class="card">
+									<a href="product1.html">
+										<img src="./img/products/-6034image19.jpeg" alt="item" />
+									</a>
+									<div class="tag">New</div>
+									<div class="detail_icon">
+										<a href="#">
+											<img
+												src="https://tinhlamjw.com/wp-content/themes/tinhlamjwt/img/icon/search.png"
+												alt=""
+											/>
+										</a>
+									</div>
+									<div class="detail__text">
+										<a href="product1.html">Xem chi tiết</a>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Vòng ưu linh ngũ sắc</h5>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-6 col-6 px-3 pt-2 pb-4">
+								<div class="card">
+									<a href="product1.html">
+										<img src="./img/products/-6034image19.jpeg" alt="item" />
+									</a>
+									<div class="tag">New</div>
+									<div class="detail_icon">
+										<a href="#">
+											<img
+												src="https://tinhlamjw.com/wp-content/themes/tinhlamjwt/img/icon/search.png"
+												alt=""
+											/>
+										</a>
+									</div>
+									<div class="detail__text">
+										<a href="product1.html">Xem chi tiết</a>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Vòng ưu linh ngũ sắc</h5>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-6 col-6 px-3 pt-2 pb-4">
+								<div class="card">
+									<a href="product1.html">
+										<img src="./img/products/-6034image19.jpeg" alt="item" />
+									</a>
+									<div class="tag">New</div>
+									<div class="detail_icon">
+										<a href="#">
+											<img
+												src="https://tinhlamjw.com/wp-content/themes/tinhlamjwt/img/icon/search.png"
+												alt=""
+											/>
+										</a>
+									</div>
+									<div class="detail__text">
+										<a href="product1.html">Xem chi tiết</a>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Vòng ưu linh ngũ sắc</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="r2c2r3" class="row pt-5">
+							<nav>
+								<ul class="pagination justify-content-center">
+									<li class="page-item">
+										<a class="page-link" href="#">&#x2190;</a>
+									</li>
+									<li class="page-item"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item">
+										<a class="page-link" href="#">&#x2192;</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-6 col-12">
+            <div class="about-us">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="./img/footer-logo.png" alt="logo" />
+                </a>
+              </div>
+              <p>
+                <i class="fa fa-map-marker-alt"></i> 280 E10 Lương Định Của, P.
+                An Phú, Q.2, TP Hồ Chí Minh
+              </p>
+              <p>
+                <i class="fa fa-map-marker-alt"></i> 61C Phan Đình Phùng, P. 17,
+                Q.Phú Nhuận, TP Hồ Chí Minh
+              </p>
+              <p>
+                <i class="fa fa-map-marker-alt"></i> Tầng 2, chung cư 42 Nguyễn
+                Huệ, P. Bến Nghé, Quận 1, TP Hồ Chí Minh
+              </p>
+              <p class="contact">
+                <i class="fa fa-phone"></i>
+                1900 29 29 17
+                <i class="fa fa-envelope"></i> tinhlamjw@gmail.com
+              </p>
+              <div class="social__redirect">
+                <a target="_blank" class="facebook" href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a target="_blank" class="youtube" href="#"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a target="_blank" class="instagram" href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6">
+            <div class="categories">
+              <h6>Sản phẩm</h6>
+              <ul>
+                <li><a href="#">Vòng Đá Phong Thủy</a></li>
+                <li><a href="#">Vòng Đá Thời Trang</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="categories">
+              <h6>Hỗ trợ</h6>
+              <ul>
+                <li><a href="#">Hướng dẫn mua hàng</a></li>
+                <li><a href="#">Chính sách bán hàng</a></li>
+                <li><a href="#">Chính sách bảo hành và đổi trả</a></li>
+                <li><a href="#">Giao nhận và Thanh toán</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright__text">
+          <p>Copyright © 2021 All rights reserved</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- js bootstrap  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.js"
+      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- thư viện owl.carousel  -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- header.js -->
+    <script src="./js/header.js"></script>
+
+    <!-- products.js -->
+    <script>
+      var leftSlider = document.getElementById("leftSlider");
+      var leftSliderVal = document.getElementById("leftSliderVal");
+      function leftSliderChange() {
+        leftSliderVal.innerText = parseInt(
+          leftSlider.value
+        ).toLocaleString("vi", { style: "currency", currency: "VND" });
+      }
+
+      var rightSlider = document.getElementById("rightSlider");
+      var rightSliderVal = document.getElementById("rightSliderVal");
+      function rightSliderChange() {
+        rightSliderVal.innerText = parseInt(
+          rightSlider.value
+        ).toLocaleString("vi", { style: "currency", currency: "VND" });
+      }
+
+      function toggleLoaiSanPham() {
+        var loaiSanPham = document.getElementById("loaiSanPham");
+				var buttonLoaiSanPham = document.getElementById("buttonLoaiSanPham");
+        if (loaiSanPham.style.display === "none") {
+          loaiSanPham.style.display = "block";
+					buttonLoaiSanPham.innerText = "\u2014";
+        } else {
+          loaiSanPham.style.display = "none";
+					buttonLoaiSanPham.innerText = "\u254B";
+        }
+      }
+
+			function toggleDongSanPham() {
+        var dongSanPham = document.getElementById("dongSanPham");
+				var buttonDongSanPham = document.getElementById("buttonDongSanPham");
+        if (dongSanPham.style.display === "none") {
+          dongSanPham.style.display = "block";
+					buttonDongSanPham.innerText = "\u2014";
+        } else {
+          dongSanPham.style.display = "none";
+					buttonDongSanPham.innerText = "\u254B";
+        }
+      }
+
+			function toggleBoSuuTap() {
+        var boSuuTap = document.getElementById("boSuuTap");
+				var buttonBoSuuTap = document.getElementById("buttonBoSuuTap");
+        if (boSuuTap.style.display === "none") {
+          boSuuTap.style.display = "block";
+					buttonBoSuuTap.innerText = "\u2014";
+        } else {
+          boSuuTap.style.display = "none";
+					buttonBoSuuTap.innerText = "\u254B";
+        }
+      }
+
+			function toggleGiaSanPham() {
+        var giaSanPham = document.getElementById("giaSanPham");
+				var buttonGiaSanPham = document.getElementById("buttonGiaSanPham");
+        if (giaSanPham.style.display === "none") {
+          giaSanPham.style.display = "block";
+					buttonGiaSanPham.innerText = "\u2014";
+        } else {
+          giaSanPham.style.display = "none";
+					buttonGiaSanPham.innerText = "\u254B";
+        }
+      }
+    </script>
+  </body>
+</html>
